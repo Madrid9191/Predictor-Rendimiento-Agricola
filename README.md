@@ -9,7 +9,7 @@ El modelo está entrenado con datos históricos reales y utiliza **Random Forest
 ## 🚀 Demo en línea
 
 👉 **App desplegada en Streamlit Cloud**  
-(agrega aquí la URL cuando termine el deploy)
+([agrega aquí la URL cuando termine el deploy](https://crop-yield-ml.streamlit.app/))
 
 ---
 
