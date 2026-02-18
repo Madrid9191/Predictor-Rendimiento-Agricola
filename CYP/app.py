@@ -24,8 +24,12 @@ import joblib
 
 
 # ---------- CARGAR MODELO ----------
-modelo = joblib.load('model/modelo_rf.pkl')
-columnas = joblib.load('model/columnas_modelo.pkl')
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+
+modelo = joblib.load(BASE_DIR / "model" / "modelo_rf.pkl")
+columnas = joblib.load(BASE_DIR / "model" / "columnas_modelo.pkl")
 
 
 # ---------- EXTRAER OPCIONES DESDE EL MODELO ----------
