@@ -49,6 +49,8 @@ y comparar:
 
 Esto convierte la app en una **herramienta de apoyo a la toma de decisiones**.
 
+---
+
 ## Cómo ejecutar el proyecto localmente
 
 **Clonar el repositorio**
