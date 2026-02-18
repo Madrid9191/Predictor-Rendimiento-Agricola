@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "Si utilizas este software, por favor cítalo usando la siguiente referencia."
+title: "Predictor de Rendimiento Agrícola"
+version: "1.0.0"
+date-released: 2026-02-18
+
+authors:
+  - family-names: Madrid Gonzalez
+    given-names: Manuel
+    email: manuelmadrid1991@hotmail.com
+    affiliation: Independent Researcher
+
+repository-code: "https://github.com/Madrid9191/Predictor-Rendimiento-Agricola"
+
+abstract: >
+  Aplicación de Machine Learning desarrollada en Python y Streamlit
+  para la predicción del rendimiento agrícola (toneladas por hectárea)
+  a partir de variables climáticas, uso de pesticidas, país y tipo de cultivo.
+  El modelo utiliza Random Forest Regressor entrenado con datos históricos.
+
+keywords:
+  - agricultura
+  - machine learning
+  - predicción
+  - rendimiento agrícola
+  - streamlit
+  - random forest
+  - climate data
+
+license: MIT
+
+preferred-citation:
+  type: software
+  authors:
+    - family-names: Madrid
+      given-names: Manuel
+  title: "Predictor de Rendimiento Agrícola"
+  year: 2026
+  url: "https://github.com/Madrid9191/Predictor-Rendimiento-Agricola"
