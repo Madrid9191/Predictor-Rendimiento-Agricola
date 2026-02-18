@@ -39,10 +39,12 @@ El modelo entrenado se guarda usando **Joblib** y se versiona con **Git LFS** de
 
 ## Instalación local
 **Clonar el repositorio**
+
 git clone https://github.com/Madrid9191/Predictor-Rendimiento-Agricola.git
 cd Predictor-Rendimiento-Agricola/CYP
 
 **Crear entorno virtual**
+
 python -m venv venv
 
 
@@ -51,9 +53,11 @@ Activar en Windows:
 venv\Scripts\activate
 
 **Instalar dependencias**
+
 pip install -r requirements.txt
 
 **Ejecutar la app**
+
 streamlit run app.py
 
 ---
