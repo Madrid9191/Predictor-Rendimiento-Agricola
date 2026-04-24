@@ -6,6 +6,20 @@ El modelo está entrenado con datos históricos reales y utiliza **Random Forest
 
 ---
 
+### Quick links:
+
+Data source: [Crop Yield Prediction Dataset](https://www.kaggle.com/datasets/patelris/crop-yield-prediction-dataset)
+
+[Data exploration](https://github.com/Madrid9191/Google_data_analytics_case_study_1/blob/main/Data%20exploration%20and%20preparation)
+
+[Data cleaning](https://github.com/Madrid9191/Google_data_analytics_case_study_1/blob/main/Data%20cleaning)
+
+[Data analysis](https://github.com/Madrid9191/Google_data_analytics_case_study_1/blob/main/Data%20analysis)
+
+Data visualization: [Tableau 1](https://public.tableau.com/app/profile/manuel.madrid.gonz.lez/viz/bike-tripdata-casestudy-1/Biketypes) [Tableau 2](https://public.tableau.com/app/profile/manuel.madrid.gonz.lez/viz/Totaltripsatstartingandendinglocationsin2022/Totaltripsatstartinglocationsin2022)
+
+
+
 ## 🚀 Demo en línea
 
 👉 **App desplegada en Streamlit Cloud**  
