@@ -9,16 +9,20 @@ t = pd.read_csv('temp.csv')
 y = pd.read_csv('yield.csv')
 
 # ---------- LIMPIEZA ----------
+# Quitar espacios inecesarios 
 for df in [p, r, t, y]:
     df.columns = df.columns.str.strip()
 
+# Convertir columna average_rain_fall_mm_per_year de tipo object (texto) a número
 r['average_rain_fall_mm_per_year'] = pd.to_numeric(
     r['average_rain_fall_mm_per_year'], errors='coerce'
 )
 
+# Borrar datos nulos 
 r = r.dropna(subset=['average_rain_fall_mm_per_year'])
 t = t.dropna(subset=['avg_temp'])
 
+# Estandarizar nombre de columnas
 t = t.rename(columns={'year': 'Year', 'country': 'Area'})
 
 # ---------- MERGE ----------
