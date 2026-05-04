@@ -9,19 +9,19 @@ t = pd.read_csv('temp.csv')
 y = pd.read_csv('yield.csv')
 
 # ----------EXPLORACION---------
-# Creamos un diccionario para iterar
+# Crear un diccionario para iterar
 datasets = {'Pesticidas': p, 'Lluvia': r, 'Temperatura': t, 'Rendimiento': y}
 
 for nombre, df in datasets.items():
     print(f"\n=== EXPLORANDO: {nombre} ===")
     print(f"Dimensiones (filas, columnas): {df.shape}")
-    print(df.head(3)) # Usamos display para que se vea como tabla bonita
+    print(df.head(3)) 
     print("-" * 30)
 
 for nombre, df in datasets.items():
     print(f"\n=== Información de tipos de datos: {nombre} ===")
     print(f"Dimensiones (filas, columnas): {df.shape}")
-    print(df.info(3)) # Usamos display para que se vea como tabla bonita
+    print(df.info(3)) 
     print("-" * 30)
 
 print("--- Conteo de cultivos ---")
