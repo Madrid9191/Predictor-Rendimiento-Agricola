@@ -53,6 +53,7 @@ Los cuatro archivos csv fueron cargados y convertidos a data frame para trabajar
 
 ![](https://github.com/Madrid9191/Predictor-Rendimiento-Agricola/blob/main/CYP/lluvia.PNG)
 
+
 ---
 ## Data cleaning
 
@@ -96,6 +97,7 @@ Antes de usar el algoritmo se estableció la variable a predecir que serían las
 
 Al finalizar el entrenamiento se guardó el modelo y también los nombres de las columnas.
 
+![](https://github.com/Madrid9191/Predictor-Rendimiento-Agricola/blob/main/CYP/modelo.PNG)
 
 ---
 ## Instalación local
