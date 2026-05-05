@@ -44,20 +44,25 @@ t = t.dropna(subset=['avg_temp'])
 # Estandarizar nombre de columnas
 t = t.rename(columns={'year': 'Year', 'country': 'Area'})
 
-# ---------- MERGE ----------
+# Temperatura promedio
 t_avg = t.groupby(['Year', 'Area'])['avg_temp'].mean().reset_index()
 
+# Cambiar nombre de Value en Rendimiento (y)
 y = y[['Area', 'Item', 'Year', 'Value']].rename(
     columns={'Value': 'Rendimiento_hg_ha'}
 )
+
+# Cambiar nombre de Value en Pesticidas (p)
 p = p[['Area', 'Year', 'Value']].rename(
     columns={'Value': 'Pesticidas_ton'}
 )
 
+# ---------- MERGE ----------
 df = pd.merge(y, r, on=['Area', 'Year'])
 df = pd.merge(df, p, on=['Area', 'Year'])
 df = pd.merge(df, t_avg, on=['Area', 'Year'])
 
+# ---------- POST-MERGE ----------
 df['Rendimiento_ton_ha'] = df['Rendimiento_hg_ha'] / 10000
 
 df = df[['Area', 'Item', 'Year', 'Rendimiento_ton_ha',
