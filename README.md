@@ -4,17 +4,24 @@ Aplicación de **Machine Learning** desarrollada con **Python y Streamlit** que 
 
 El modelo está entrenado con datos históricos reales y utiliza **Random Forest Regressor** para capturar relaciones no lineales entre clima y producción agrícola.
 
----
 
+---
 ### Quick links:
 
 Data source: [Crop Yield Prediction Dataset](https://www.kaggle.com/datasets/patelris/crop-yield-prediction-dataset)
 
-[Data exploration](https://github.com/Madrid9191/Google_data_analytics_case_study_1/blob/main/Data%20exploration%20and%20preparation)
+[Data exploration](https://github.com/Madrid9191/Predictor-Rendimiento-Agricola/blob/main/CYP/exploracion.PNG)
 
-[Data cleaning](https://github.com/Madrid9191/Google_data_analytics_case_study_1/blob/main/Data%20cleaning)
+[Data cleaning-PreMerge](https://github.com/Madrid9191/Predictor-Rendimiento-Agricola/blob/main/CYP/limpieza.PNG)
 
-[Data analysis](https://github.com/Madrid9191/Google_data_analytics_case_study_1/blob/main/Data%20analysis)
+[Data cleaning-Merge](https://github.com/Madrid9191/Predictor-Rendimiento-Agricola/blob/main/CYP/merge.PNG)
+
+[Data cleaning-PostMerge](https://github.com/Madrid9191/Predictor-Rendimiento-Agricola/blob/main/CYP/postmerge.PNG)
+
+[One-Hot](https://github.com/Madrid9191/Predictor-Rendimiento-Agricola/blob/main/CYP/onehot.PNG)
+
+[Modelo](https://github.com/Madrid9191/Predictor-Rendimiento-Agricola/blob/main/CYP/modelo.PNG)
+
 
 ## 🚀 Demo en línea
 
