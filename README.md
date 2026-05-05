@@ -45,6 +45,14 @@ La predicción se basa en las siguientes variables:
 
 Los cuatro archivos csv fueron cargados y convertidos a data frame para trabajar con ellos. La exploración de los datos permitió encontrar inconsistencias en los nombres de las columnas. Pesticidas (p), Lluvia (r) y Rendimiento (y) usan "Area" y "Year" y Temperatura (t) usa "country" y "year" (en minúsculas), mientras que las tablas Rendimiento (y) y Pesticidas (p) tienen una columna con el mismo nombre Valor. También  la columna average_rain_fall_mm_per_year en el data frame de Lluvia es de tipo object (texto), no número. Por otra parte la columna Área de la tabla Lluvia tiene espacios extras, es ¨ Area¨ no ¨Area¨. Asimismo se encontró que la tabla Lluvia tiene casi 800 valores faltantes y la tabla Temperatura tiene unos 2,500 valores faltantes. Mientras que en la tabla de Rendimiento la columna Valor tiene los valores en hectogramos (hg/ha) por lo que deben ser cambiados a toneladas (ton/ha) para que los resultados sean fáciles de interpretar. Por último, como en la tabla de Temperatura (t), hay muchos registros para el mismo país y el mismo año.
 
+![](https://github.com/Madrid9191/Predictor-Rendimiento-Agricola/blob/main/CYP/temperatura.PNG)
+
+![](https://github.com/Madrid9191/Predictor-Rendimiento-Agricola/blob/main/CYP/rendimiento.PNG)
+
+![](https://github.com/Madrid9191/Predictor-Rendimiento-Agricola/blob/main/CYP/pesticidas.PNG)
+
+![](https://github.com/Madrid9191/Predictor-Rendimiento-Agricola/blob/main/CYP/lluvia.PNG)
+
 ---
 ## Data cleaning
 
@@ -83,7 +91,7 @@ Como su nombre lo indica, es una colección de muchos árboles de decisión trab
 Se eligió el Random Forest porque en la agricultura, las variables no siempre tienen una relación de "a más, mejor". Por ejemplo, un poco más de lluvia ayuda al cultivo, pero demasiada lluvia lo ahoga. Random Forest es excelente detectando estos patrones complejos y curvas que una regresión lineal simple no podría ver. También porque reduce del Overfitting (Sobreajuste).
 
 ## Entrenar el Modelo
-
+[Entrenar el Modelo](https://github.com/Madrid9191/Predictor-Rendimiento-Agricola/blob/main/CYP/train_model.py)
 Antes de usar el algoritmo se estableció la variable a predecir que serían las toneladas del cultivo y las variables que servirán para predecir. Una vez establecidas se usó ¨RandomForestRegressor¨. Se usa la versión "Regressor" porque el objetivo es predecir un número continuo (toneladas de cultivo) y no una categoría (como "maíz" o "frijol"). 
 
 Al finalizar el entrenamiento se guardó el modelo y también los nombres de las columnas.
