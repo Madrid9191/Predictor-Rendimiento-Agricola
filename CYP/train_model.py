@@ -63,8 +63,11 @@ df = pd.merge(df, p, on=['Area', 'Year'])
 df = pd.merge(df, t_avg, on=['Area', 'Year'])
 
 # ---------- POST-MERGE ----------
+
+# Transformar de ton/ha a hg/ha
 df['Rendimiento_ton_ha'] = df['Rendimiento_hg_ha'] / 10000
 
+# Borrar las columnas inescesarias 
 df = df[['Area', 'Item', 'Year', 'Rendimiento_ton_ha',
          'Pesticidas_ton', 'average_rain_fall_mm_per_year', 'avg_temp']]
 
